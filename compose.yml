@@ -1,0 +1,8 @@
+services:
+  live-subprocess:
+    build: .
+    image: futureys/live-subprocess:development
+    volumes:
+      - .:/workspace:cached
+      - /workspace/.venv
+      - ./output:/output
