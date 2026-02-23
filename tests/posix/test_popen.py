@@ -14,14 +14,16 @@ from subprocess import Popen  # nosec
 
 import pytest
 
+if os.name == "nt":
+    pty = pytest.importorskip("pty")
+
+# Reason: To prevent ModuleNotFoundError. pylint: disable=wrong-import-position
 from livesubprocess.posix.popen import EventLoopWrapper
 from livesubprocess.posix.popen import LivePopenByLoop
 from livesubprocess.posix.popen import StandardStream
 from livesubprocess.posix.popen import StreamReader
 
-# Example condition: skip the file if the Python version is less than 3.10
-if os.name == "nt":
-    pytest.skip("This test file requires a POSIX system.", allow_module_level=True)
+# pylint: enable=wrong-import-position
 
 # ---------------------------------------------------------------------------
 # Fake helpers used for defensive-branch tests (lines 133-134 and 148-149).
