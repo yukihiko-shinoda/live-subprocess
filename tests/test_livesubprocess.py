@@ -14,7 +14,7 @@ from livesubprocess.factory import LiveSubProcessFactory
 
 def test_create_popen() -> None:
     # Reason: This only executes test code.
-    with Popen([sys.executable, "-c", "print('hello')"], stdout=PIPE, stderr=PIPE) as popen:  # noqa: S603  # nosec B603
+    with Popen([sys.executable, "-c", "print('hello')"], stdout=PIPE, stderr=PIPE) as popen:  # nosec B603
         live_popen = LiveSubProcessFactory.create_popen(popen)
         stdout, returncode = asyncio.run(live_popen.wait())
     assert "hello" in stdout

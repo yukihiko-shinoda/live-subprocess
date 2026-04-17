@@ -132,7 +132,7 @@ def test_event_loop_wrapper_len_with_explicit_loop() -> None:
 def test_live_popen_raises_value_error_without_pipes() -> None:
     """Covers lines 107-108: ValueError when Popen lacks stdout/stderr pipes."""
     # Reason: Popen with no PIPE for stdout/stderr — LivePopenByLoop must reject it.
-    with Popen([sys.executable, "-c", ""]) as popen, pytest.raises(ValueError, match="stdout and stderr pipes"):  # noqa: S603  # nosec B603
+    with Popen([sys.executable, "-c", ""]) as popen, pytest.raises(ValueError, match="stdout and stderr pipes"):  # nosec B603
         LivePopenByLoop(popen)
 
 
@@ -146,7 +146,7 @@ def test_live_popen_stop_with_explicit_loop_returns_early() -> None:
     loop = asyncio.new_event_loop()
     try:
         # Reason: This only executes test code.
-        with Popen([sys.executable, "-c", ""], stdout=PIPE, stderr=PIPE) as popen:  # noqa: S603  # nosec B603
+        with Popen([sys.executable, "-c", ""], stdout=PIPE, stderr=PIPE) as popen:  # nosec B603
             live = LivePopenByLoop(popen, loop=loop)
             live.stop()  # Should return early without calling remove_reader.
             popen.communicate()
@@ -166,7 +166,7 @@ def test_live_popen_stop_without_explicit_loop_removes_readers() -> None:
         #   S603: This only executes test code.
         #   ASYNC220: The async wrapper is required so asyncio.get_running_loop() succeeds
         #             inside the code under test; Popen is intentional — LivePopenByLoop wraps a synchronous Popen.
-        with Popen([sys.executable, "-c", ""], stdout=PIPE, stderr=PIPE) as popen:  # noqa: S603, ASYNC220  # nosec B603
+        with Popen([sys.executable, "-c", ""], stdout=PIPE, stderr=PIPE) as popen:  # noqa: ASYNC220  # nosec B603
             live = LivePopenByLoop(popen)  # No explicit loop → _loop is falsy.
             live.stop()  # Reaches lines 119-120; remove_reader is a no-op here.
             popen.communicate()
@@ -186,7 +186,7 @@ def test_live_popen_wait_sync_fallback() -> None:
     RuntimeError, triggering the fallback.
     """
     # Reason: This only executes test code.
-    with Popen([sys.executable, "-c", ""], stdout=PIPE, stderr=PIPE) as popen:  # noqa: S603  # nosec B603
+    with Popen([sys.executable, "-c", ""], stdout=PIPE, stderr=PIPE) as popen:  # nosec B603
         live = LivePopenByLoop(popen)
         coroutine = live.wait()
         result: tuple[str, int] | None = None
