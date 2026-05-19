@@ -1,4 +1,4 @@
-FROM futureys/claude-code-python-development:20260407212500
+FROM futureys/claude-code-python-development:20260515203000
 RUN apt-get update && apt-get install -y --no-install-recommends \
     # For testing
     ffmpeg \
