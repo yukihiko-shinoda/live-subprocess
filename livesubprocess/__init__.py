@@ -8,7 +8,7 @@ from livesubprocess.pty import *  # noqa: F403
 
 __author__ = """Yukihiko Shinoda"""
 __email__ = "yuk.hik.future@gmail.com"
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 __all__: list[str] = []
 __all__ += factory.__all__  # type: ignore[name-defined]  # noqa: F405 pylint: disable=undefined-variable

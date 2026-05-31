@@ -55,7 +55,7 @@ dev = [
 
 [project]
 name = "livesubprocess"
-version = "0.1.0"
+version = "0.2.0"
 description = "Displays the stdout and stderr of the subprocess in real time."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -120,7 +120,7 @@ repository = "https://github.com/yukihiko-shinoda/live-subprocess"
 skips = ["tests/*"]
 
 [tool.bumpversion]
-current_version = "0.1.0"
+current_version = "0.2.0"
 commit = true
 tag = true
 
