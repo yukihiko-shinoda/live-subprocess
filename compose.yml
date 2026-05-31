@@ -6,3 +6,8 @@ services:
       - .:/workspace:cached
       - /workspace/.venv
       - ./output:/output
+      # - Using uv in Docker | uv
+      #   https://docs.astral.sh/uv/guides/integration/docker/#caching
+      - uv-cache:/root/.cache/uv
+volumes:
+  uv-cache:

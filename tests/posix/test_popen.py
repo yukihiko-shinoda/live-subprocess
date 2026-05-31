@@ -157,8 +157,7 @@ def test_live_popen_stop_with_explicit_loop_returns_early() -> None:
 def test_live_popen_stop_without_explicit_loop_removes_readers() -> None:
     """Covers lines 119-120: stop() calls remove_reader when no explicit loop is set.
 
-    Must run inside asyncio.run() so that asyncio.get_running_loop() succeeds
-    inside EventLoopWrapper.remove_reader().
+    Must run inside asyncio.run() so that asyncio.get_running_loop() succeeds inside EventLoopWrapper.remove_reader().
     """
 
     async def _inner() -> None:
