@@ -1,5 +1,9 @@
 """This module implements fixture of instance."""
 
+# This comment avoids docformatter's issue:
+# - The docformatter removes blank line against PEP8 (conflicts with Ruff (Black)) · Issue #350 · PyCQA/docformatter
+#   https://github.com/PyCQA/docformatter/issues/350
+
 
 # Reason: This class is aggregation. pylint: disable=too-few-public-methods
 class InstanceResource:

@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
  && rm -rf /var/lib/apt/lists/*
 COPY pyproject.toml /workspace/
-RUN uv sync --python 3.13 \
- && uv cache clean
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv sync
 COPY . /workspace/
 ENTRYPOINT [ "uv", "run" ]
