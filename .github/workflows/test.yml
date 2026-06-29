@@ -6,6 +6,8 @@ on:
   pull_request:
     branches:
       - main
+permissions:
+  contents: read
 jobs:
   test:
     runs-on: ${{ matrix.os }}
@@ -36,6 +38,6 @@ jobs:
       - if: runner.os == 'Linux'
         run: uv run invoke test.all
   call-workflow-lint:
-    uses: yukihiko-shinoda/invoke-lint/.github/workflows/reusable-lint.yml@main
+    uses: yukihiko-shinoda/reusable-workflow-invoke-lint-lint/.github/workflows/workflow.yml@3718638ffcd3a5e5b851bee1ba522cdb4a5513b2  # v1.0.0
     with:
       enable-xenon: false
