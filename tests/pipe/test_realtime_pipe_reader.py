@@ -1,3 +1,5 @@
+# Copyright (C) 2026 Yukihiko Shinoda
+
 """Test for realtimestdoutdisplaying.pipe.realtime_pipe_reader."""
 
 import asyncio

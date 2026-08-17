@@ -1,3 +1,5 @@
+# Copyright (C) 2026 Yukihiko Shinoda
+
 """POSIX Popen-based implementation of RealtimeStdoutDisplaying."""
 
 from __future__ import annotations
