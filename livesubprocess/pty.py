@@ -1,3 +1,5 @@
+# Copyright (C) 2026 Yukihiko Shinoda
+
 """Mixin base class for running subprocesses with real-time stdout display."""
 
 from __future__ import annotations

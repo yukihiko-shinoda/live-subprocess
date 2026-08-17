@@ -1,3 +1,5 @@
+# Copyright (C) 2026 Yukihiko Shinoda
+
 """This module implements fixture of instance."""
 
 # This comment avoids docformatter's issue:

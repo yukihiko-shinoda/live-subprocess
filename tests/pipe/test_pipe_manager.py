@@ -1,3 +1,5 @@
+# Copyright (C) 2026 Yukihiko Shinoda
+
 """Test for realtimestdoutdisplaying.pipe.pipe_manager."""
 
 from __future__ import annotations

@@ -1,3 +1,5 @@
+# Copyright (C) 2026 Yukihiko Shinoda
+
 """Tests for `livesubprocess` package."""
 
 from __future__ import annotations

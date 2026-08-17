@@ -1,3 +1,5 @@
+# Copyright (C) 2026 Yukihiko Shinoda
+
 """Real-time stdout displaying factory."""
 
 from __future__ import annotations

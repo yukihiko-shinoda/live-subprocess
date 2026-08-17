@@ -1,3 +1,5 @@
+# Copyright (C) 2026 Yukihiko Shinoda
+
 """Logs pipe output and stores it into queue."""
 
 from __future__ import annotations

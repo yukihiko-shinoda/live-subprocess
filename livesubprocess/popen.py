@@ -1,3 +1,5 @@
+# Copyright (C) 2026 Yukihiko Shinoda
+
 """Abstract base class for realtime stdout displaying popen processes."""
 
 from __future__ import annotations

@@ -1,3 +1,5 @@
+# Copyright (C) 2026 Yukihiko Shinoda
+
 """Unit tests for `livesubprocess/posix/popen.py` targeting missing coverage lines."""
 
 from __future__ import annotations

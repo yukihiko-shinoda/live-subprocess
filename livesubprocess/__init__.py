@@ -1,3 +1,5 @@
+# Copyright (C) 2026 Yukihiko Shinoda
+
 """Top-level package for Live Subprocess."""
 
 from __future__ import annotations
