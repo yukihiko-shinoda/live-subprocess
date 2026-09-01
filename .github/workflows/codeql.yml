@@ -29,7 +29,7 @@ permissions:
   contents: read
 jobs:
   call-workflow:
-    uses: yukihiko-shinoda/reusable-workflow-codeql-python/.github/workflows/workflow.yml@d405c9ef85160a9b1e7c667054eaa0d967f036ba  # v1.0.0
+    uses: yukihiko-shinoda/reusable-workflow-codeql-python/.github/workflows/workflow.yml@6b87a347ed8695f7ad687f78c068104c27b08d04  # v1.0.0
     permissions:
       security-events: write
       packages: read
