@@ -1,7 +1,7 @@
 # Live Subprocess
 
 [![Test](https://github.com/yukihiko-shinoda/live-subprocess/workflows/Test/badge.svg)](https://github.com/yukihiko-shinoda/live-subprocess/actions?query=workflow%3ATest)
-[![CodeQL](https://github.com/yukihiko-shinoda/live-subprocess/workflows/CodeQL/badge.svg)](https://github.com/yukihiko-shinoda/live-subprocess/actions?query=workflow%3ACodeQL)
+[![CodeQL](https://github.com/yukihiko-shinoda/live-subprocess/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/yukihiko-shinoda/live-subprocess/actions/workflows/github-code-scanning/codeql)
 [![Code Coverage](https://qlty.sh/gh/yukihiko-shinoda/projects/live-subprocess/coverage.svg)](https://qlty.sh/gh/yukihiko-shinoda/projects/live-subprocess)
 [![Maintainability](https://qlty.sh/gh/yukihiko-shinoda/projects/live-subprocess/maintainability.svg)](https://qlty.sh/gh/yukihiko-shinoda/projects/live-subprocess)
 [![Dependabot](https://flat.badgen.net/github/dependabot/yukihiko-shinoda/live-subprocess?icon=dependabot)](https://github.com/yukihiko-shinoda/live-subprocess/security/dependabot)
