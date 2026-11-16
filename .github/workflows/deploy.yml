@@ -6,6 +6,6 @@ permissions:
   contents: read
 jobs:
   call-workflow:
-    uses: yukihiko-shinoda/reusable-workflow-invoke-lint-deploy/.github/workflows/workflow.yml@b7757fa239a31d979f38c07c1f2e5a6dacbc2f0c  # v1.0.0
+    uses: yukihiko-shinoda/reusable-workflow-invoke-lint-deploy/.github/workflows/workflow.yml@926db30ee44a91868b0245fe1d0c1dd4eafec38b  # v1.0.0
     secrets:
       pypi_password: ${{ secrets.PYPI_PASSWORD }}
